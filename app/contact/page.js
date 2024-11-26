@@ -3,7 +3,8 @@ import React from 'react'
 function contact() {
   return (
     <div>
-</div>
+    <h1>Test</h1>  
+    </div>
   )
 }
 
