@@ -1,11 +1,11 @@
 import React from 'react'
 
-function contact() {
+function hotspots() {
   return (
     <div>
-    <h1>Test</h1>  
+    <h1>Woops</h1>
     </div>
   )
 }
 
-export default contact
+export default hotspots
