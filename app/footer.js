@@ -7,7 +7,7 @@ export default function Footer() {
       {/* First section of the footer */}
       <div>
         {/* Display your name and the current year */}
-        <p>SafeCity &copy; {new Date().getFullYear()}</p>
+        <p>SafeCity Footer Update &copy; {new Date().getFullYear()}</p>
       </div>
       {/* Second section of the footer */}
       <div>
