@@ -32,7 +32,7 @@ function Blog() {
             ></textarea>
 
 
-            <div class="py-8 row-span-2 col-span-2 py-4 text-3xl font-bold text-white underline mb-4 ">Location of Emergency</div>
+            <div className="py-8 row-span-2 col-span-2 py-4 text-3xl font-bold text-white underline mb-4 ">Location of Emergency</div>
 
             <input type="text" placeholder="Type here" className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500
               dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
@@ -43,13 +43,13 @@ function Blog() {
 
 
 
-            <div class="grid grid-rows-3 grid-flow-col gap-4">
-              <div class="py-8 row-span-2 col-span-2 py-4 text-3xl font-bold text-white underline mb-4">Image of Emergency</div>
+            <div className="grid grid-rows-3 grid-flow-col gap-4">
+              <div className="py-8 row-span-2 col-span-2 py-4 text-3xl font-bold text-white underline mb-4">Image of Emergency</div>
               <input type="file" className=" file-input file-input-bordered file-input-secondary w-full max-w-xs" />
 
 
             </div>
-            <div class="row-span-2 pt-6 flex justify-end"><button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4
+            <div className="row-span-2 pt-6 flex justify-end"><button type="button" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4
             focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm
             px-5 py-2.5 text-center me-2 mb-2 ">SEND EMERGENCY</button>
             </div>
