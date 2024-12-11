@@ -1,5 +1,5 @@
 import React from 'react';
-import MapView from '../components/MapView'; // Importing the existing MapView component
+import MapView from '../components/mapview'; // Importing the existing MapView component
 
 // Sample incident data
 const incidentData = [
