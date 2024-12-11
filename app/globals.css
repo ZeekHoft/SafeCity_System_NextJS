@@ -22,3 +22,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+.map-container {
+  height: 500px;
+  width: 100%;
+}
+
+.marker {
+  cursor: pointer;
+}
