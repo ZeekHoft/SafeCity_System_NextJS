@@ -2,24 +2,28 @@ import React from "react";
 
 const data = [
     {
+        id: "0",
         title: "Alert: Near Volcanic Eruption",
         details:
             "A volcanic eruption has occurred near the area. Wearing masks are adviced to avoid inhalation of ashfall.",
         date: "12/11/2024",
     },
     {
+        id: "1",
         title: "Car Accident",
         details:
             "A collision between a motorcycle and jeepney. Please be adviced to follow traffic rules for your safety.",
         date: "12/5/2024",
     },
     {
+        id: "2",
         title: "Heavy Rainfall",
         details:
             "The recent typhoon has brought heavy rainfall and strong winds. Residents affected should stay indoors and prepare for evacuation when needed. Flooding may occur.",
         date: "11/29/2024",
     },
     {
+        id: "3",
         title: "Recent Robbery",
         details:
             "There was a robbery that happened last night at 10pm. Please report when suspect is spotted.",
@@ -29,20 +33,20 @@ const data = [
 
 function generateList() {
     var list = [];
-    data.forEach((product) => {
+    data.forEach((notif) => {
         list.push(
-            <li className="pb-4">
+            <li className="pb-4" key={notif["id"]}>
                 <div className="flex items-center space-x-6">
-                    <div class="flex-1 min-w-0">
-                        <p class="text-xl font-medium text-gray-900 truncate dark:text-white">
-                            {product["title"]}
+                    <div className="flex-1 min-w-0">
+                        <p className="text-xl font-medium text-gray-900 truncate dark:text-white">
+                            {notif["title"]}
                         </p>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                            {product["details"]}
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                            {notif["details"]}
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        {product["date"]}
+                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        {notif["date"]}
                     </div>
                 </div>
             </li>
