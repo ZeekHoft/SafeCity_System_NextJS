@@ -3,12 +3,7 @@ import Link from 'next/link';
 // Define the Footer component
 export default function Footer() {
   return (
-<<<<<<< HEAD
     <footer className="bg-blue-500 text-white py-4 sticky top-0 z-50 text-center mt-auto">
-
-=======
-    <footer className="bg-blue-500 text-white py-4 sticky top-0 z-50 mt-auto">
->>>>>>> origin/main
       {/* First section of the footer */}
       <div>
         {/* Display your name and the current year */}
