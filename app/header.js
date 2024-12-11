@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Website title */}
         <h1 className="text-xl font-semibold">SafeCity</h1>
-        
+
         {/* Navigation menu */}
         <nav className="hidden md:block">
           <ul className="flex gap-x-6">
@@ -34,13 +34,13 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/reportsummary" className="hover:text-gray-300">
+              <Link href="/report_history" className="hover:text-gray-300">
                 Reports
               </Link>
             </li>
           </ul>
         </nav>
-        
+
         {/* Social media icons */}
         <div className="hidden md:block">
           {/* Add icons here */}
