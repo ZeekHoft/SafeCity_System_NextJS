@@ -21,7 +21,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
 }
 
 
@@ -33,6 +32,3 @@ body {
 .marker {
   cursor: pointer;
 }
-=======
-}
->>>>>>> origin/main
