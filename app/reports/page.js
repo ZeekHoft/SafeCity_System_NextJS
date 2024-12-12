@@ -6,7 +6,7 @@ function Blog() {
 
 
     <div className="min-h-screen flex justify-center items-center p-4">
-      <div className="bg-gradient-to-r from-blue-500 to-red-500 p-8 w-full max-w-8xl rounded-lg max-h-lg">
+      <div className="bg-blue-500 p-8 w-full max-w-8xl rounded-lg max-h-lg">
 
         <h1 className="text-3xl font-bold text-white underline mb-4">
           Emergency Description
