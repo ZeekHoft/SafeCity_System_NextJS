@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from 'next/form'
 
 function Blog() {
   return (
@@ -8,59 +9,38 @@ function Blog() {
     <div className="min-h-screen flex justify-center items-center p-4">
       <div className="bg-blue-500 p-8 w-full max-w-8xl rounded-lg max-h-lg">
 
-        <h1 className="text-2xl font-bold text-white underline mb-4">
-          Emergency Description
-        </h1>
 
 
 
         <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label
-              htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >            </label>
-
-
-
-            <textarea
-              id="message"
-              rows="6"
-              className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500
-              dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
-              placeholder="Type Here..."
-            ></textarea>
-
-
+          <Form >
+            <h1 className="text-2xl font-bold text-white underline mb-4"> Emergency Description</h1>
+            <textarea id="message" rows="6" className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500
+            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+              placeholder="Description...">
+            </textarea>
             <div class="py-8 row-span-2 col-span-2 py-4 text-2xl font-bold text-white underline mb-4 ">Location of Emergency</div>
 
-            <input type="text" placeholder="Type here" className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300
+            <input type="text" placeholder="Location..." className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300
             focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500
             dark:focus:border-blue-500" />
 
-
-
             <div class="py-8 row-span-2 col-span-2 py-4 text-2xl font-bold text-white underline mb-4 ">Type of Emergency</div>
 
-            <input type="text" placeholder="Type here" className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300
+            <input type="text" placeholder="Emergency..." className="text-2xl block p-6 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300
             focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
 
 
 
 
             <div class="grid grid-rows-3 grid-flow-col gap-4">
-              <div class="py-8 row-span-2 col-span-2 py-4 text-2xl font-bold text-white underline mb-4">Image of Emergency</div>
+              <div class=" pt-6 row-span-2 col-span-2 text-2xl font-bold text-white underline ">Image of Emergency</div>
               <input type="file" className=" file-input file-input-bordered file-input-secondary w-full max-w-xs" />
 
-              <div class="row-span-2 pt-6 flex justify-end"><button type="button" class=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4
-              focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm
-              px-5 py-2.5 text-center me-2 mb-2 ">SEND REPORT</button>
-              </div>
             </div>
+          </Form>
 
-          </div>
-
-          <div>
+          <div className='pt-12'>
 
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h2 className="text-3xl font-semibold text-gray-800  ">Instructions  For Emergency Reports</h2>
@@ -90,6 +70,12 @@ function Blog() {
                 </ul>
 
               </p>
+
+            </div>
+
+            <div class="row-span-2 pt-6 flex justify-end"><button type="button" class=" text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4
+                focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm
+                px-5 py-2.5 text-center me-2 mb-2 ">SEND REPORT</button>
             </div>
           </div>
 
@@ -101,7 +87,13 @@ function Blog() {
 
         </div>
       </div>
+
+      <script> </script>
+
     </div>
+
+
+
   );
 }
 
