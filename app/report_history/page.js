@@ -32,9 +32,9 @@ const data = [
 
 
 const ReportHistory = (context) => {
-  const param_loc = context.searchParams.location ? param_loc.location : ''
-  const param_des = context.searchParams.description ? param_des.description : ''
-  const param_type = context.searchParams.emergency ? param_type.emergency : ''
+  const param_loc = context.searchParams.location
+  const param_des = context.searchParams.description
+  const param_type = context.searchParams.emergency
 
 
   console.log(param_loc, "this is the location beep boop bop")
