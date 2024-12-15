@@ -36,8 +36,8 @@ function Blog() {
   }
   return (
     <>
-      <div className="py-2 px-12">
-        <h1 className="text-4xl border-b-4">History Reports For Emergencies</h1>
+      <div className="px-24 py-12">
+        <h1 className="text-4xl border-b-4">Report Emergencies</h1>
       </div>
 
       <div className="min-h-screen flex justify-center items-center p-4">
@@ -135,9 +135,9 @@ function Blog() {
                   <Link href={{
                     pathname: "/report_history",
                     query: {
-                      location: `Location: ${locationValue}`,
-                      description: `Description: ${descriptionValue}`,
-                      emergency: `Emergency: ${emergencyValue}`
+                      location: `${locationValue}`,
+                      description: `${descriptionValue}`,
+                      emergency: `${emergencyValue}`
 
                     }
 
