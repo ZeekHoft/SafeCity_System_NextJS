@@ -10,7 +10,7 @@ import ReportHistory from '../report_history/page';
 function Blog() {
   const [descriptionValue, setDescription] = useState("")
   const [locationValue, setLocation] = useState("")
-  const [emergencyValue, setEmergency] = useState("Choose Emergency Category")
+  const [emergencyValue, setEmergency] = useState("")
   const [isLoading, setLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,8 +36,8 @@ function Blog() {
   }
   return (
     <>
-      <div className="py-2 px-12">
-        <h1 className="text-4xl border-b-4">History Reports For Emergencies</h1>
+      <div className="px-24 py-12">
+        <h1 className="text-4xl border-b-4">Report Emergencies</h1>
       </div>
 
       <div className="min-h-screen flex justify-center items-center p-4">
@@ -88,7 +88,7 @@ function Blog() {
             focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
             dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   onClick={toggleDropdown}
-                >
+                >Select Type of Emergency
                   {emergencyValue}
                 </button>
 
@@ -122,8 +122,8 @@ function Blog() {
               </div>
 
               <div className="grid grid-rows-3 grid-flow-col gap-4">
-                <div className=" pt-6 row-span-2 col-span-2 text-2xl font-bold text-white underline ">Image of Emergency</div>
-                <input type="file" className=" file-input file-input-bordered file-input-secondary w-full max-w-xs" />
+                {/* <div className=" pt-6 row-span-2 col-span-2 text-2xl font-bold text-white underline ">Image of Emergency</div>
+                <input type="file" className=" file-input file-input-bordered file-input-secondary w-full max-w-xs" /> */}
 
 
 
@@ -135,9 +135,9 @@ function Blog() {
                   <Link href={{
                     pathname: "/report_history",
                     query: {
-                      location: `Location: ${locationValue}`,
-                      description: `Description: ${descriptionValue}`,
-                      emergency: `Emergency: ${emergencyValue}`
+                      location: `${locationValue}`,
+                      description: `${descriptionValue}`,
+                      emergency: `${emergencyValue}`
 
                     }
 

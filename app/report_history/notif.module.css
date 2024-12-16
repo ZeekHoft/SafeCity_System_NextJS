@@ -1,0 +1,91 @@
+.notificationItem {
+    position: relative;
+    padding: 1.5rem 2rem;
+    background-color: #313131;
+    /* White background for card effect */
+    border-radius: 0.75rem;
+    /* Rounded corners for card style */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    /* Card shadow */
+    margin-bottom: 1.5rem;
+    /* Space between cards */
+    transition: transform 0.2s ease-in-out;
+}
+
+.notificationItem:hover {
+    transform: scale(1.02);
+    /* Subtle hover effect for interactivity */
+}
+
+.notificationItem:last-child>.verticalLine::before {
+    display: none;
+    /* No line shown */
+}
+
+.label {
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: #ef4444;
+
+    @media (min-width: 640px) {
+        margin-bottom: 0;
+    }
+}
+
+.verticalLine {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.25rem;
+    align-items: flex-start;
+
+    @media (min-width: 640px) {
+        flex-direction: column;
+        /* No row layout on larger screens */
+    }
+}
+
+.verticalLine::before {
+    display: none;
+    /* No vertical line */
+}
+
+.verticalLine::after {
+    display: none;
+    /* No dot or circle indicator */
+}
+
+.date {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    color: #1d4ed8;
+
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @media (min-width: 640px) {
+        position: static;
+        margin-bottom: 0;
+    }
+}
+
+
+.title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+.details {
+    color: rgb(169, 169, 169);
+}
