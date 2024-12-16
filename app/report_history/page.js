@@ -4,32 +4,6 @@ import styles from "./notif.module.css";
 
 
 
-const data = [
-  {
-    id: 1,
-    location: "Brazil",
-    description: "Was walking on the beach then i saw a big shadow heading towards us, it was a tsunami. I dropped my phone while  I was on a call.",
-    emergency: "Geological",
-  },
-  {
-    id: 2,
-    location: "Philippines",
-    description: "I was in a call with my friend then he just hung up, after that my phone got stolen, I was gonna  recycle it since the battery was about to burn out.",
-    emergency: "Human-made",
-  },
-  {
-    id: 3,
-    location: "Philippines",
-    description: "I got a phone (not gonna explain where) it was heating up and now my apartment burned down...",
-    emergency: "Hazards",
-  },
-
-
-
-];
-
-
-
 
 const ReportHistory = (context) => {
   const param_loc = context.searchParams.location
@@ -60,9 +34,9 @@ const ReportHistory = (context) => {
     {
 
       id: 4,
-      location: param_loc,
-      description: param_des,
-      emergency: param_type,
+      location: param_loc ? param_loc : '',
+      description: param_des ? param_des : <div className={styles.label}>Waiting for more reports...</div>,
+      emergency: param_type ? param_type : ''
 
     }];
 
