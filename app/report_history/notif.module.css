@@ -1,7 +1,7 @@
 .notificationItem {
     position: relative;
     padding: 1.5rem 2rem;
-    background-color: #313131;
+    background-color: #396af0;
     /* White background for card effect */
     border-radius: 0.75rem;
     /* Rounded corners for card style */
@@ -58,16 +58,15 @@
 
 .date {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     width: 6rem;
     height: 2.5rem;
-    text-align: center;
-    font-size: 1rem;
+    text-align: left;
+    font-size: 20px;
     line-height: 1.25rem;
     font-weight: bold;
     padding: 0.75rem;
-    color: #1d4ed8;
+    color: #ffffff;
 
 
     text-transform: uppercase;
@@ -87,5 +86,5 @@
 }
 
 .details {
-    color: rgb(169, 169, 169);
+    color: rgb(0, 0, 0);
 }
